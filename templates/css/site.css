@@ -1,0 +1,227 @@
+
+/* 1. RESET AND HTML5 SETTINGS 
+------------------------------*/ 
+
+	body,
+	ul,
+	ol,
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	fieldset,
+	dd {
+		margin:  0;
+		padding: 0;
+	}
+
+	article,
+	aside,
+	dialog,
+	figure,
+	figcaption,
+	footer,
+	header,
+	hgroup,
+	nav,
+	section,
+	small {
+		display: block;
+	}
+
+
+/* 2. VERTICAL RHYTHM - gridlover.net
+--------------------------------------------*/
+
+
+	body {
+		font-size: 1.20000em;
+		line-height: 1.62500em;
+	}
+	article {
+	  	margin: auto;
+	}
+	h1 {
+		font-size: 2.87500em;
+		line-height: 1.13043em;
+		margin-top: 0.5652em;
+		margin-bottom: 1.1304em;
+	}
+	h2 {
+		font-size: 1.68750em;
+		line-height: 1.13043em;
+		margin-top: 1.9259em;
+		margin-bottom: 0.963em;
+	}
+	h3 {
+		font-size: 1.31250em;
+		line-height: 1.23810em;
+		margin-top: 1.2381em;
+		margin-bottom: 0em;
+	}
+	p, ul {
+		margin-top: 0em;
+		margin-bottom: 1.625em;
+	}
+	small, aside {
+		font-size: 0.75000em;
+	}
+
+
+/* 3. BASIC STYLES - FONTS
+--------------------------------------------*/
+
+	html {
+		background-color: #FFF;
+		color: #444;
+	}
+
+	body {
+		font-family: Calibri, arial, helvetica, 'lucida grande', 'lucida sans unicode', verdana, sans-serif;
+		padding: 3em;
+		padding-left: 6em;
+	}
+
+	h1{
+		margin: 1em 0 1em 0;
+		font-family: Calibri, 'Helvetica Neue', Arial, sans-serif; 
+		font-size-adjust:0.47; 
+		font-weight:800; 
+		font-style:normal; 
+		font-size: 2.2em;
+	}
+
+	h2{
+		font-family: Calibri, 'Helvetica Neue', Arial, sans-serif; 
+		font-size-adjust:0.47; 
+		font-weight:800; 
+		font-style:normal; 
+		margin-top: 2em;
+		margin-bottom: 0;
+	}
+
+	p{
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	ul, ol{
+		margin: 1em;
+		margin-left: 2em;
+	}
+
+	a{
+		color: #000;
+		text-decoration: none;
+	}
+
+	a:hover, a:active {
+		color: #FC0599;
+		text-decoration: underline;
+	}
+
+	input[type="text"]{
+		font-size: 1em;
+		border-radius: 0.4em;
+		border: solid 1px #333;
+		width: 4em;
+		padding: 0.2em;
+		padding-left: 0.4em;
+	}
+
+	.result, .equals, .operator{
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+
+
+/* 4. Stucture
+--------------------------------------------*/
+
+
+	footer{
+		margin-top: 8em;
+		color: #ccc;
+		font-size: 1rem;
+	}
+
+	footer a{
+		color: #ccc;
+	}
+
+	hgroup h1{
+		margin-bottom: 0;
+	}
+
+	hgroup p{
+		margin-top: 0;
+	}
+
+
+
+/* 4. Components
+--------------------------------------------*/
+
+	button, .button {
+		background: #33a0e8;
+		background: -moz-linear-gradient(top,  #33a0e8 0%, #2180ce 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#33a0e8), color-stop(100%,#2180ce));
+		background: -webkit-linear-gradient(top,  #33a0e8 0%,#2180ce 100%);
+		background: -o-linear-gradient(top,  #33a0e8 0%,#2180ce 100%);
+		background: -ms-linear-gradient(top,  #33a0e8 0%,#2180ce 100%);
+		background: linear-gradient(to bottom,  #33a0e8 0%,#2180ce 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33a0e8', endColorstr='#2180ce',GradientType=0 );
+		border-color: #2270AB #18639A #0F568B;
+		border-style: solid;
+		border-width: 1px;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 0 #83C5F1 inset;
+		color: #FFFFFF;
+		border-radius: 0.4em;
+		cursor: pointer;
+		font-size: 1rem;
+		font-weight: 600;
+		overflow: visible;
+		padding: 5px 16px;
+		text-align: center;
+	}
+
+	.button:active, .button-down {
+		background: #2180ce;
+		background: -moz-linear-gradient(top,  #2180ce 0%, #33a0e8 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2180ce), color-stop(100%,#33a0e8));
+		background: -webkit-linear-gradient(top,  #2180ce 0%,#33a0e8 100%);
+		background: -o-linear-gradient(top,  #2180ce 0%,#33a0e8 100%);
+		background: -ms-linear-gradient(top,  #2180ce 0%,#33a0e8 100%);
+		background: linear-gradient(to bottom,  #2180ce 0%,#33a0e8 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2180ce', endColorstr='#33a0e8',GradientType=0 );
+	}
+
+
+	.alert {
+		margin-top: 2em;
+		padding: 15px;
+		margin-bottom: 20px;
+		border: 1px solid transparent;
+		border-radius: 4px;
+	}
+
+	.alert > p,
+	.alert > ul {
+		margin-bottom: 0;
+	}
+
+	.alert > p + p {
+		margin-top: 5px;
+	}
+
+	.alert-danger {
+		color: #b94a48;
+		background-color: #f2dede;
+		border-color: #eed3d7;
+	}
+
+
+

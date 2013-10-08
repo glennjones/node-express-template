@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+
+    {{> head}} 
+    
+  </head>
+  <body>
+ 
+    <article>
+
+      {{> header}} 
+
+      <h2>{{title}}</h2>
+
+      <form method="post">
+        <input type="text" name="a" value="{{a}}" />
+        <span class="operator">{{sumOperator}}</span>
+        <input type="text" name="b" value="{{b}}" />
+        <input class="button" type="submit" name="submit" value="{{title}}" />
+        {{#if result}}
+           <span class="equals">=</span> 
+          <span class="result">{{numberformat result}}</span>
+        {{/if}}
+      </form>
+
+      {{#if error}}
+        <p class="alert alert-danger">{{error}}</p>
+      {{/if}}
+
+
+    </article>
+
+    {{> footer}} 
+
+  </body> 
+</html>

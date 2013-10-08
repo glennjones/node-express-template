@@ -1,0 +1,26 @@
+{
+  "name": "node-express-template",
+  "version": "0.0.1",
+  "description": "This is an example project for node and express",
+  "keywords": [],
+  "author": "Glenn Jones",
+  "main": "index",
+  "scripts": {
+    "test": "make test",
+    "start": "app"
+  },
+  "dependencies": {
+    "express": "3.4.x",
+    "handlebars": "1.0.x"
+  },
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "mocha": "1.10.x",
+    "grunt-contrib-jshint": "0.1.x",
+    "grunt-mocha-test": "0.4.x",
+    "chai": "1.6.x"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  }
+}
