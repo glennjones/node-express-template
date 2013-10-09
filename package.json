@@ -1,7 +1,7 @@
 {
   "name": "node-express-template",
   "version": "0.0.1",
-  "description": "This is an example project for node and express",
+  "description": "This is an example project built with node and express",
   "keywords": [],
   "author": "Glenn Jones",
   "main": "index",
